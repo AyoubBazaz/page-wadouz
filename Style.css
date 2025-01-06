@@ -189,7 +189,8 @@ body {
 
     .text1 {
         font-size: 3vw; /* Adjust font size for smaller screens */
-        margin: 10px 20px;
+        margin: 10px 10px;
+        
     }
 
     .content .disc {
@@ -610,5 +611,7 @@ form{
         flex-direction: row;
         justify-content: space-between;
     }
+    
 }
 
+ 
