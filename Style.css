@@ -8,7 +8,9 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #fff;
-    scroll-behavior: smooth;
+    width: 100%;
+    background-attachment:fixed ;
+    
 }
 
 .wadouz {
@@ -24,16 +26,16 @@ body {
     overflow: hidden;
 }
 .logo {
-    position: absolute; /* Position the logo absolutely */
-    top: 20px; /* Adjust spacing from the top */
-    left: 20px; /* Adjust spacing from the left */
-    max-width: 150px; /* Limit the size of the logo */
-    z-index: 2; /* Ensure the logo is above the background video */
+    position: absolute;  
+    top: 20px; 
+    left: 20px; 
+    max-width: 150px;  
+    z-index: 2;  
 }
 
 .logo img {
-    width: 100%; /* Make the image responsive */
-    border-radius: 6px; /* Optional: Keep rounded corners */
+    width: 100%;  
+    border-radius: 6px;  
 }
 
 
@@ -57,11 +59,9 @@ body {
 .deconstructed {
     position: relative;
     margin: auto;
-    margin-left: 170px;
     color: transparent;
     font-family: 'Cambay', sans-serif ;
     font-size: 10vw;
-    /* ila baghi nsaghar 7ajm*/
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.03em;
@@ -73,7 +73,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    color: #f9aa00;
+    color:#E97C36;
     pointer-events: none;
   }
   
@@ -161,19 +161,27 @@ body {
     }
   }
 
-.text1 {
-    color: #000000;
-    margin-left: 300px;
+  .text1 {
+    text-align: center;
+    color: #000000;  
     margin-bottom: 30px;
-    margin-top: 40px;
+    margin-top: 150px;
+    background-color: rgba(187, 192, 196, 0.9);  
+    border-radius: 20px;
+    width: 450px;
+    margin-left: 460px;
+    padding: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
+
 .content .disc {
-    margin-left: 300px;
-    max-width: 800px;
+    color: #000000;  
+    margin-top: 100px;
     line-height: 1.6;
-    background-color: #000;
+    background-color: rgba(187, 192, 196, 0.9);  
     border-radius: 6px;
+ 
 }
 
 @media (max-width: 768px) {
@@ -183,29 +191,32 @@ body {
     } 
 
     .deconstructed {
-        font-size: 14vw; /* Scale down font size for smaller screens */
-        margin-left: 0; /* Center the deconstructed text */
+        font-size: 14vw;  
+        margin-left: 0;  
     }
 
     .text1 {
-        font-size: 3vw; /* Adjust font size for smaller screens */
-        margin: 10px 10px;
-        
+        font-size: 1vw;  
+        margin: 10px auto;  
+        width: 277px;  
+        border-radius: 100px;
+        margin-top: 50px;
+
     }
 
     .content .disc {
         font-size: 4vw;
         margin-left: 20px;
-        margin-right: 20px; /* Move the paragraph to the center bottom */
-        text-align: center; /* Center align text */
+        margin-top: 50px;
+        margin-right: 20px; 
+        text-align: center;  
         line-height: 1.4;
+        border-radius: 9px;
     }
 }
 
 
-/*rejoindre*/
-
-/* Base styles */
+ 
 .rejoindre {
     display: flex;
     flex-direction: column;
@@ -216,6 +227,8 @@ body {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    overflow: hidden;
+
 }
 
 .rejoindre h1 {
@@ -285,9 +298,6 @@ body {
     font-weight: 600;
 }
 
-/* Responsive Design */
-
-/* Medium screens (tablets and small desktops) */
 @media (max-width: 1024px) {
     .rejoindre h1 {
         font-size: 50px;
@@ -303,7 +313,6 @@ body {
     }
 }
 
-/* Small screens (mobile phones) */
 @media (max-width: 768px) {
     .rejoindre h1 {
         font-size: 40px;
@@ -312,13 +321,14 @@ body {
     .store-buttons {
         flex-direction: column;
         gap: 15px;
+        margin-top: 50px;
+        
     }
 
     .playstore-button,
     .appstore-button {
-        width: 80%; /* Adjust width for smaller screens */
-        justify-content: center;
-    }
+         justify-content: center;
+     }
 }
 
  @media (max-width: 480px) {
@@ -352,11 +362,13 @@ body {
 
 
 .mission-section {
-    margin-top: -100px; /* Adjust this for larger screens */
+    margin-top: -100px;  
     height: auto;
     text-align: center;
     padding: 40px;
     background-color: #fff;
+    overflow: hidden;
+
 }
 
 h1 {
@@ -367,7 +379,7 @@ h1 {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 90px;
     padding: 20px;
     margin-top: 100px;
     justify-items: center;
@@ -381,6 +393,8 @@ h1 {
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;  
+
 }
 
 .card h3 {
@@ -397,8 +411,11 @@ h1 {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .card{
+        gap: 60px;
+    }
     .mission-section {
-        margin-top: 50px; /* Add more space for medium screens */
+        margin-top: 50px; 
     }
 }
 
@@ -408,7 +425,7 @@ h1 {
         margin-top: 50px;
     }
     .mission-section {
-        margin-top: 200px; /* Add even more space for smaller screens */
+        margin-top: 100px;  
     }
 }
 
@@ -420,6 +437,8 @@ h1 {
     align-items: center;
     background-color: #ffe100;
     height: 100vh;
+    overflow: hidden;
+
     
 }
 
@@ -441,7 +460,6 @@ p.download-link:hover {
 }
  */
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .wadouz {
         align-items: center;
@@ -565,8 +583,7 @@ form{
     right: 0;
     width: 200px;
     height: 90%;
-    border-radius: 20px;
-}
+ }
 
 .map{
     position: absolute;
@@ -574,11 +591,14 @@ form{
     left: 0;
     width: 90%;
     height: 90%;
+ 
 }
 
 .map iframe{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+
 }
 
 .contactMethod{
