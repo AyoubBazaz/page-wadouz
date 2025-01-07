@@ -12,7 +12,7 @@ body {
     background-attachment:fixed ;
     
 }
- 
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -239,7 +239,7 @@ body {
     text-align: center;
     color: #000000;  
     margin-bottom: 30px;
-    margin-top: 150px;
+    margin-top: 80px;
     background-color: rgba(187, 192, 196, 0.9);  
     border-radius: 20px;
     width: 450px;
@@ -250,7 +250,7 @@ body {
 
 .content .disc {
     color: #000000;  
-    margin-top: 100px;
+    margin-top: 80px;
     line-height: 1.6;
     background-color: rgba(187, 192, 196, 0.9);  
     border-radius: 6px;
