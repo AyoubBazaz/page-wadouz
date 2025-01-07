@@ -13,99 +13,6 @@ body {
     
 }
 
-@media (max-width: 375px) {
-    /* Adjusting .wadouz container */
-    .wadouz {
-        align-items: center;
-        padding: 10px;
-    }
-
-    /* Responsive adjustments for .deconstructed */
-    .deconstructed {
-        font-size: 12vw;  
-        margin-left: 0;  
-    }
-
-    /* Center-aligning and resizing .text1 */
-    .text1 {
-        font-size: 3vw;  
-        margin: 10px auto;  
-        width: 90%;  
-        border-radius: 12px;
-        margin-top: 40px;
-    }
-
-    /* Center-aligning and resizing content's .disc */
-    .content .disc {
-        font-size: 3vw;
-        margin: 20px auto; 
-        text-align: center;  
-        line-height: 1.4;
-        border-radius: 6px;
-        padding: 10px;
-    }
-
-    /* For the rejoindre section */
-    .rejoindre h1 {
-        font-size: 8vw;
-        margin-top: 20%;
-        margin-bottom: 10%;
-    }
-
-    .discWadouz {
-        margin-top: -10%;
-    }
-
-    .store-buttons {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 5%;
-    }
-
-    .playstore-button,
-    .appstore-button {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .playstore-button .icon,
-    .appstore-button .icon1 {
-        width: 50px;
-        height: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-    /* Further refinements for 320px width */
-    .text1 {
-        font-size: 4vw;  
-        margin: 15px auto;  
-        width: 95%;  
-        padding: 12px;
-    }
-
-    .rejoindre h1 {
-        font-size: 10vw;
-        margin-top: 10%;
-    }
-
-    .store-buttons {
-        gap: 10px;
-    }
-
-    .playstore-button,
-    .appstore-button {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .playstore-button .icon,
-    .appstore-button .icon1 {
-        width: 40px;
-        height: 18px;
-    }
-}
-
 
 .sidebar {
     position: fixed;
@@ -464,20 +371,20 @@ body {
     font-weight: 600;
 }
 
-
 @media (max-width: 1024px) {
-    .rejoindre{
+    .rejoindre {
         height: 100%;
         width: 100%;
     }
+
     .rejoindre h1 {
         font-size: 10vw;
         margin-top: 15%;
     }
 
     .discWadouz {
-        margin-bottom: 15%;
         margin-top: 20%;
+        margin-bottom: 15%;
     }
 
     .store-buttons {
@@ -487,124 +394,121 @@ body {
 }
 
 @media (max-width: 768px) {
-    .rejoindre{
+    .rejoindre {
         height: 250%;
         width: 100%;
     }
+
     .rejoindre h1 {
         font-size: 12vw;
-    }
-    .discWadouz{
-        margin-top: -10%;
+        margin-top: 10%;
     }
 
-    .store-buttons{
+    .discWadouz {
         margin-top: -10%;
     }
 
     .store-buttons {
+        margin-top: 8%;
         flex-direction: column;
         gap: 4%;
-        margin-top: 8%;
     }
 
     .playstore-button,
     .appstore-button {
         justify-content: center;
-        margin-bottom: 200px;
+        margin-bottom: 20%;
+        width: 50%;
     }
 }
 
 @media (max-width: 480px) {
-    .rejoindre{
-        height: 100%;
+    .rejoindre {
+        height: auto;
         width: 100%;
-     }
+    }
+
     .rejoindre h1 {
         font-size: 10vw;
+        margin-top: 5%;
         margin-bottom: 30%;
-        margin-top: -0%;
-    }
-    .discWadouz{
-        margin-top: -20%;
-    }
-
-    .store-buttons{
-        margin-top: 10%;
-    }
-    .playstore-button,.appstore-button{
-        margin-bottom: 3%;
-        width: 38%;
-        margin-left: 25%;
-      }
-
-    .playstore-button .icon {
-        width: 40%; 
-        height: 36%;  
-    }
-
-    .appstore-button .icon1 {
-        width: 40%;   
-        height: 40%; 
-    }
-    .text-1 {
-        font-size: 2vw;
-        line-height: 15px;
-    }
-
-    .text-2 {
-        font-size: 2.5vw;
-        line-height: 15px;
-
-    }
-}
-@media (max-width: 375px) {
-    .rejoindre {
-        height: auto;  
-        width: 100%;
-        padding: 8%;  
-     }
-
-    .rejoindre h1 {
-        font-size: 10vw;  
-        margin-bottom: 20%;  
         text-align: center;
     }
 
     .discWadouz {
-        margin-top: -8%;  
+        margin-top: -20%;
     }
 
     .store-buttons {
-        flex-direction: column;  
-        align-items: center; 
-        gap: 12px;  
-        width: 60%;
-        margin-right: 14%;
-        margin-top: auto;
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        gap: 6%;
     }
 
     .playstore-button,
     .appstore-button {
-        width: 75%;  
-        max-width: 250px;  
+        width: 60%;
+        margin-bottom: 3%;
+    }
 
     .playstore-button .icon,
     .appstore-button .icon1 {
-        width: 45%;  
-        height: auto;  
+        width: 40%;
+        height: auto;
     }
 
-    .text-1 {
-        font-size: 3.5vw; 
-        line-height: 1.2;
-    }
-
+    .text-1,
     .text-2 {
-        font-size: 4vw;  
+        font-size: 3.5vw;
         line-height: 1.2;
     }
 }
+
+@media (max-width: 375px) {
+    .rejoindre {
+        height: auto;
+        width: 100%;
+        padding: 8%;
+    }
+
+    .rejoindre h1 {
+        font-size: 10vw;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+
+    .discWadouz {
+        margin-top: -8%;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .playstore-button,
+    .appstore-button {
+        width: 75%;
+        max-width: 250px;
+    }
+
+    .playstore-button .icon,
+    .appstore-button .icon1 {
+        width: 45%;
+        height: auto;
+    }
+
+    .text-1 {
+        font-size: 4vw;
+    }
+
+    .text-2 {
+        font-size: 4.5vw;
+    }
 }
 
 
