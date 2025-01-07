@@ -351,7 +351,9 @@ body {
 .icon1 {
     width: 100px;
     height: 50px;
+
 }
+
 
 .texts {
     margin-left: 1rem;
@@ -454,7 +456,7 @@ body {
 
     .playstore-button .icon,
     .appstore-button .icon1 {
-        width: 40%;
+        width: 25%;
         height: auto;
     }
 
@@ -498,7 +500,7 @@ body {
 
     .playstore-button .icon,
     .appstore-button .icon1 {
-        width: 45%;
+        width: 20%;
         height: auto;
     }
 
