@@ -15,11 +15,19 @@
    })
  }
 
-
-function toggleSidebar() {
+ function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("active");
 }
+
+ document.addEventListener("click", function(event) {
+  const sidebar = document.getElementById("sidebar");
+  const openButton = document.querySelector(".open-btn");
+
+   if (!sidebar.contains(event.target) && !openButton.contains(event.target) && sidebar.classList.contains("active")) {
+    closeSidebar();
+  }
+});
 
 function closeSidebar() {
   const sidebar = document.getElementById("sidebar");

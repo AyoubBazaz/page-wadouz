@@ -235,7 +235,7 @@ body {
     }
   }
 
-  .text1 {
+.text1 {
     text-align: center;
     color: #000000;  
     margin-bottom: 30px;
@@ -287,7 +287,6 @@ body {
         border-radius: 9px;
     }
 }
-
 
  
 .rejoindre {
@@ -371,72 +370,88 @@ body {
     font-weight: 600;
 }
 
+
 @media (max-width: 1024px) {
+    .rejoindre{
+        height: 100%;
+    }
     .rejoindre h1 {
-        font-size: 50px;
+        font-size: 10vw;
     }
 
     .discWadouz {
-        margin-bottom: 80px;
-        margin-top: 20px;
+        margin-bottom: 15%;
+        margin-top: 3%;
     }
 
     .store-buttons {
-        gap: 3rem;
+        gap: 7%;
     }
 }
 
 @media (max-width: 768px) {
+    .rejoindre{
+        height: 100%;
+    }
     .rejoindre h1 {
-        font-size: 40px;
+        font-size: 12vw;
     }
 
     .store-buttons {
         flex-direction: column;
-        gap: 15px;
-        margin-top: 50px;
-        
+        gap: 4%;
+        margin-top: 8%;
     }
 
     .playstore-button,
     .appstore-button {
-         justify-content: center;
-     }
+        justify-content: center;
+    }
 }
 
- @media (max-width: 480px) {
+@media (max-width: 480px) {
+    .rejoindre{
+        height: 100%;
+        width: auto;
+    }
     .rejoindre h1 {
-        font-size: 30px;
+        font-size: 10vw;
+        margin-bottom: 90px;
     }
 
-    .playstore-button,
-    .appstore-button {
-        padding: 0.5rem 1rem;
+    .playstore-button,.appstore-button{
+        margin-bottom: 10%;
+        width: 38%;
+        margin-left: 25%;
+      }
+
+      .playstore-button .icon {
+        width: 40%;  /* Set width to a percentage */
+        height: 36%;  /* Adjust height proportionally */
     }
 
-    .icon {
-        height: 20px;
-        width: 80px;
-    }
 
-    .icon1 {
-        width: 80px;
-        height: 40px;
+    .appstore-button .icon1 {
+        width: 40%;  /* Set width to a percentage */
+        height: 40%; /* Adjust height proportionally */
     }
-
     .text-1 {
-        font-size: 0.65rem;
+        font-size: 2vw;
+        line-height: 15px;
     }
 
     .text-2 {
-        font-size: 0.8rem;
+        font-size: 2.5vw;
+        line-height: 15px;
+
     }
 }
+
 
 
 .mission-section {
     margin-top: -100px;  
-    height: auto;
+    height: 100vh;
     text-align: center;
     padding: 40px;
     background-color: #fff;
@@ -677,7 +692,7 @@ form{
 @media screen and (min-width:800px) {
     section{
         max-width: 1100px;
-    }
+    } 
     .contactForm{
         grid-template-columns: 1fr 1fr;
     }   
