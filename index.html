@@ -19,8 +19,22 @@
       })();
     </script>
 </head>
-<body >
-    <div class="wadouz">
+<body > 
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="logoWadouz.png" alt="">
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#home" onclick="closeSidebar()">Accueil</a></li>
+      <li><a href="#join" onclick="closeSidebar()">Rejoindre Wadouz</a></li>
+      <li><a href="#mission" onclick="closeSidebar()">Notre Mission</a></li>
+      <li><a href="#contact" onclick="closeSidebar()">Contact-nous</a></li>
+    </ul>
+  </div>
+  
+  <button class="open-btn" onclick="toggleSidebar()">☰</button>
+  
+    <div class="wadouz" id="home">
         <div class="logo" data-aos="fade-down" data-aos-duration="1500">
           <img src="logoWadouz.png" alt="">
         </div>
@@ -48,7 +62,7 @@
         </div>
     </div>
 
-    <div class="rejoindre" >
+    <div class="rejoindre" id="join" >
         <h1 data-aos="flip-up"  data-aos-duration="1500"
         >Rejoindre Wadouz</h1>
         <div class="discWadouz" data-aos="zoom-out"
@@ -90,7 +104,7 @@
           </div>
        </div>
        
-       <div class="mission-section">
+       <div class="mission-section" id="mission">
         <h1 data-aos="flip-up">Notre Mission.</h1>
         <div class="cards-container">
           <div class="card" data-aos="fade-up">
@@ -132,7 +146,7 @@
           
         </div>
     </div>
-        <section class="contact-form">
+        <section class="contact-form" id="contact">
              <h1 class="heading" data-aos="flip-up">Contact-nous</h1> 
             
             <div class="contactForm">
@@ -147,8 +161,7 @@
                   <textarea id="message" class="input" cols="30" rows="5" placeholder="Votre message..." required></textarea>
                   <input type="submit" class="input submit"  value="Envoyer un message">
               </form>
-        
-                <div class="map-container" data-aos="fade-left" data-aos-duration="3000" >
+                <div class="map-container" >
                     <div class="mapBg"></div>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3367.0963906053885!2d-7.622674924253973!3d33.584086973336696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM1JzAyLjciTiA3wrAzNycxMi40Ilc!5e1!3m2!1sen!2sma!4v1735916542295!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

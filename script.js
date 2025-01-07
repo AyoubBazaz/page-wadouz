@@ -14,3 +14,16 @@
 
    })
  }
+
+
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  if (sidebar.classList.contains('active')) {
+    sidebar.classList.remove('active');
+  }
+}

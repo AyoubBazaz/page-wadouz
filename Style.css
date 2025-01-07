@@ -12,7 +12,81 @@ body {
     background-attachment:fixed ;
     
 }
-
+ 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;  
+    width: 250px;
+    height: 100%;
+    background-color:  rgba(255, 255, 255, 0.463) ;
+    backdrop-filter:blur(10px);
+    color: #000000;
+    transition: 0.3s;  
+    z-index: 1000;
+    overflow-y: auto;
+}
+  
+  .sidebar.active {
+    right: 0;  
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+     color: #E97C36;
+    background-color:transparent; /* Slightly transparent background for the header */
+    border-bottom: 1px solid #E97C36;
+  }
+  .sidebar-header img{
+    width: 100px;
+    height: 20px;
+    margin-top:  10px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+  .sidebar-menu li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+  }
+  
+.sidebar-menu li a:hover {
+    background-color: #E97C36;
+  
+}
+  
+.open-btn, .close-btn {
+    background: none;
+    border: none;
+    color: #E97C36;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.open-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1001;
+}
+  
+.close-btn {
+    margin-left: auto;
+    font-size: 30px;
+}
+  
 .wadouz {
     position: relative;
     display: flex;
@@ -38,7 +112,6 @@ body {
     border-radius: 6px;  
 }
 
-
 .background-video {
     position: absolute;
     top: 0;
@@ -46,14 +119,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7;
-    z-index: 0;
+     z-index: 0;
 }
 
 .content {
     position: relative;
     z-index: 1;
     text-align: center;
+    margin-top: 80px;  
+
 }
 
 .deconstructed {
@@ -65,9 +139,9 @@ body {
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.03em;
-  }
+}
   
-  .deconstructed > div {
+.deconstructed > div {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,33 +149,33 @@ body {
     bottom: 0;
     color:#E97C36;
     pointer-events: none;
-  }
+}
   
-  .deconstructed > div:nth-child(1) {
+.deconstructed > div:nth-child(1) {
     -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
     mask-image: linear-gradient(black 25%, transparent 25%);
     animation: deconstructed1 2.5s infinite;
-  }
+}
   
-  .deconstructed > div:nth-child(2) {
+.deconstructed > div:nth-child(2) {
     -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     animation: deconstructed2 2.5s infinite;
-  }
+}
   
-  .deconstructed > div:nth-child(3) {
+.deconstructed > div:nth-child(3) {
      -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     animation: deconstructed3 2.5s infinite;
-  }
+}
   
-  .deconstructed > div:nth-child(4) {
+.deconstructed > div:nth-child(4) {
      -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
     mask-image: linear-gradient(transparent 75%, black 75%);
     animation: deconstructed4 2.5s infinite;
-  }
+}
   
-  @keyframes deconstructed1 {
+@keyframes deconstructed1 {
     0% {
       transform: translateX(100%);
     }
@@ -174,14 +248,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-
 .content .disc {
     color: #000000;  
     margin-top: 100px;
     line-height: 1.6;
     background-color: rgba(187, 192, 196, 0.9);  
     border-radius: 6px;
- 
+    transition: margin-top 0.3s ease;  
 }
 
 @media (max-width: 768px) {
@@ -441,25 +514,7 @@ h1 {
 
     
 }
-
-/* p.download-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-} 
-
-p.download-link:hover {
-    background-color: #0056b3;
-}
- */
-
+ 
 @media (max-width: 768px) {
     .wadouz {
         align-items: center;
@@ -633,5 +688,3 @@ form{
     }
     
 }
-
- 
