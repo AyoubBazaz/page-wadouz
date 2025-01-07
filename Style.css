@@ -454,7 +454,11 @@ body {
         margin-bottom: 3%;
     }
 
-    .playstore-button .icon,
+    .playstore-button .icon{
+     width: 19%;
+     height: auto;
+   
+    }
     .appstore-button .icon1 {
         width: 25%;
         height: auto;
