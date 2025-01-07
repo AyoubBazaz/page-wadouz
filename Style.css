@@ -13,6 +13,100 @@ body {
     
 }
 
+@media (max-width: 375px) {
+    /* Adjusting .wadouz container */
+    .wadouz {
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Responsive adjustments for .deconstructed */
+    .deconstructed {
+        font-size: 12vw;  
+        margin-left: 0;  
+    }
+
+    /* Center-aligning and resizing .text1 */
+    .text1 {
+        font-size: 3vw;  
+        margin: 10px auto;  
+        width: 90%;  
+        border-radius: 12px;
+        margin-top: 40px;
+    }
+
+    /* Center-aligning and resizing content's .disc */
+    .content .disc {
+        font-size: 3vw;
+        margin: 20px auto; 
+        text-align: center;  
+        line-height: 1.4;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    /* For the rejoindre section */
+    .rejoindre h1 {
+        font-size: 8vw;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .discWadouz {
+        margin-top: -10%;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 5%;
+    }
+
+    .playstore-button,
+    .appstore-button {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .playstore-button .icon,
+    .appstore-button .icon1 {
+        width: 50px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Further refinements for 320px width */
+    .text1 {
+        font-size: 4vw;  
+        margin: 15px auto;  
+        width: 95%;  
+        padding: 12px;
+    }
+
+    .rejoindre h1 {
+        font-size: 10vw;
+        margin-top: 10%;
+    }
+
+    .store-buttons {
+        gap: 10px;
+    }
+
+    .playstore-button,
+    .appstore-button {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .playstore-button .icon,
+    .appstore-button .icon1 {
+        width: 40px;
+        height: 18px;
+    }
+}
+
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -770,3 +864,4 @@ form{
     }
     
 }
+
