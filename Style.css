@@ -305,15 +305,17 @@ body {
 }
 
 .rejoindre h1 {
-    margin-top: 60px;
+    margin-top: 8%;
     font-size: 2.5em;
+    margin-bottom: 13%;
 }
 
 .discWadouz {
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    margin-bottom: 140px;
-    margin-top: 100px;
+    margin-bottom: 180px;
+    margin-top: -60px;
+    text-align: center;
 }
 
 .store-buttons {
@@ -502,10 +504,11 @@ body {
         max-width: 250px;
     }
 
-    .playstore-button .icon,
-    .appstore-button .icon1 {
+    .playstore-button .icon, 
+    .appstore-button .icon {
         width: 20%;
         height: auto;
+        margin-right: 10px;
     }
 
     .text-1 {
@@ -520,18 +523,19 @@ body {
 
 
 .mission-section {
-    margin-top: -100px;  
-    height: 100vh;
+    margin-top: 8%;
+    min-height: 100%;
     text-align: center;
     padding: 40px;
     background-color: #fff;
-    overflow: hidden;
-
+    overflow: auto;  
+    height: auto;
+    margin-bottom: -20%;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
 }
 
 .cards-container {
@@ -539,7 +543,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 90px;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 10px;
     justify-items: center;
 }
 
@@ -551,8 +555,7 @@ h1 {
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;  
-
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card h3 {
@@ -568,22 +571,21 @@ h1 {
 @media (max-width: 768px) {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .card{
-        gap: 60px;
+        gap: 30px; /* Adjust for smaller screens */
     }
     .mission-section {
-        margin-top: 50px; 
+        margin-top: 50px;
     }
 }
 
 @media (max-width: 480px) {
     .cards-container {
-        grid-template-columns: 6fr;
+        grid-template-columns: 1fr; /* One column layout */
+        gap: 20px; /* Reduced gap for smaller screens */
         margin-top: 50px;
     }
     .mission-section {
-        margin-top: 100px;  
+        margin-top: 100px;
     }
 }
 
@@ -593,10 +595,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffe100;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
-
+    margin-top: -10%;
     
 }
  
@@ -631,9 +632,9 @@ section{
     text-align: center;
     width: 90%;
     max-width: 550px;
-    height: 100vh;
+    height: 100%;
     margin: auto;
-    margin-top: 2em;
+    margin-top: 10%;
 }
 
 .sectionHeader{
@@ -772,6 +773,7 @@ form{
         flex-direction: row;
         justify-content: space-between;
     }
+     
     
 }
 
